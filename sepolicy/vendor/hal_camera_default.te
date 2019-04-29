@@ -11,6 +11,8 @@ set_prop(hal_camera_default, vendor_default_prop)
 
 # Allow hal_camera_default to search in mnt/vendor
 allow hal_camera_default mnt_vendor_file:dir search;
+set_prop(hal_camera_default, camera_prop)
+get_prop(hal_camera_default, camera_ro_prop)
 
 # Allow hal_camera_default to read sys files
 allow hal_camera_default sysfs:file read;
