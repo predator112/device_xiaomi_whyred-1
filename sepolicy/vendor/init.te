@@ -4,3 +4,6 @@ allow init rootfs:file mounton;
 allow init vendor_file:file { execute };
 allow init debugfs_rpm:file relabelfrom;
 allow init vendor_file:file { execute };
+
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_type:file { setattr };
