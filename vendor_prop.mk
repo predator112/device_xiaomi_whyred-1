@@ -284,3 +284,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.disable_init_blank=true \
     ro.charger.enable_suspend=true
+
+# Dolby
+vendor.audio.dolby.ds2.enabled=true
