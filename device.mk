@@ -477,6 +477,10 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libcamera_sdm660_shim
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # SQlite
 PRODUCT_PACKAGES += \
     sqlite3
