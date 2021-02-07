@@ -36,11 +36,6 @@
 /sys/module/mdss_fb/parameters/backlight_dimmer              u:object_r:sysfs_backlightdim:s0
 /sys/class/graphics/fb0/measured_fps                         u:object_r:sysfs_fpsinfo:s0
 
-# HW Info
-/sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
-/sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
-
-
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_whyred                                                             u:object_r:hal_light_default_exec:s0
 
@@ -95,7 +90,3 @@
 
 # Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.3-service.widevine   u:object_r:hal_drm_widevine_exec:s0
-
-# Dolby
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0
-
